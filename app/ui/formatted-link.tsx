@@ -13,7 +13,7 @@ const defaultProps = {
 }
 
 export default function FormattedLink(props: props) {
-    const style = "pl-1 pr-1 underline hover:text-gray-400";
+    const style = "pl-1 pr-1 underline hover:text-hover";
 
     const { text, link, isInternal } = { ...defaultProps, ...props };
 

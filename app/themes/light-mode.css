@@ -1,0 +1,7 @@
+html[data-theme="light-mode"] {
+    --color-primary: black;
+    --color-secondary: #52525b;
+    --color-hover: #a1a1aa;
+    --color-typography: black;
+    --color-background: white;
+}

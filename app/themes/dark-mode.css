@@ -1,0 +1,7 @@
+html[data-theme="dark-mode"] {
+    --color-primary: white;
+    --color-secondary: #71717a;
+    --color-hover: #a1a1aa;
+    --color-typography: white;
+    --color-background: black;
+}
