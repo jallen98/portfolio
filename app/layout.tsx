@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${spaceGrotesk.className} antialiased`}>
         <div className="w-screen flex justify-center">
-          <div className="max-w-default md:min-w-default ml-10 mr-10 mb-5">
+          <div className="max-w-default min-w-full pl-5 pr-5 pb-5 md:min-w-default">
             <Header/>
             {children}
           </div>

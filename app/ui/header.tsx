@@ -45,7 +45,7 @@ export default function Header() {
                 { pages.map(({ display, link }) => (<Link key={link} className={`mr-5 hover:text-hover ${ activePage(link) ? "text-primary underline" : "text-secondary" }`} href={link}>{ display }</Link>)) }
             </div>
 
-            <Tooltip className="text-sm" content={ theme === 'dark-mode' ? "Light Mode" : "Dark Mode" }>
+            <Tooltip className="text-sm bg-tooltip p-1 rounded" content={ theme === 'dark-mode' ? "Light Mode" : "Dark Mode" }>
                 <button className="text-2xl" onClick={onChangeTheme}>{theme === 'dark-mode' ? <FaRegSun/>: <FaRegMoon/>}</button>
             </Tooltip>
         </div>

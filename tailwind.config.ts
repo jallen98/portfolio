@@ -20,6 +20,7 @@ const config: Config = {
         'hover':                'var(--color-hover)',
         'typography':           'var(--color-typography)',
         'typography-secondary': 'var(--color-typography-secondary)',
+        'tooltip':              'var(--color-tooltip)',
         'background':           'var(--color-background)',
       },
       width: {
@@ -30,6 +31,9 @@ const config: Config = {
       },
       maxWidth: {
         'default': '800px',
+      },
+      height: {
+        'project-card': '26rem',
       }
     },
   },

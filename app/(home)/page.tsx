@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { GoArrowUpRight } from "react-icons/go";
 import FormattedLink from "../ui/formatted-link";
-import { FaGithub, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
     return (
