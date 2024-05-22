@@ -19,11 +19,9 @@ export default function Career() {
                             was cancelled before my contract was up. I was deemed a 'high performing contractor' and my manager fought hard to keep me around,\
                             but no contractors were allowed to stay."
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col">
             <p className="mb-5">{ nextdroid }</p>
-            <Image className="mb-5" src="/nextdroid_app.jpg" alt="NextDroid Software" width="500" height="200"/>
             <p className="mb-5">{ apple }</p>
-            <Image className="mb-5" src="/nd_pointcloud.png" alt="NextDroid Software" width="500" height="200"/>
         </div>
     );
 }

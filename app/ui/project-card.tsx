@@ -1,32 +1,36 @@
 import { Tooltip } from "@nextui-org/tooltip";
 import Image from "next/image";
+import { FaGithub, FaRegWindowRestore } from "react-icons/fa";
+import { LuAppWindow } from "react-icons/lu";
 import { RxOpenInNewWindow } from "react-icons/rx";
-import { TbSourceCode } from "react-icons/tb";
 
 export interface ProjectCardData {
     title: string;
+    blurb: string;
     imageProps: { src: string, alt: string };
     sourceUrl?: string;
     appUrl?: string;
 };
 
 export function ProjectCard({ data }: { data: ProjectCardData }) {
-    const { title, imageProps, sourceUrl, appUrl } = data;
+    const { title, blurb, imageProps, sourceUrl, appUrl } = data;
 
     return (
-        <div className="w-fit">
-            <div className="text-center">
-                <p className="text-xl">{title}</p>
-                <Image src={imageProps.src} alt={imageProps.alt} width="200" height="500"/>
-                <div className="flex justify-between">
+        <div className="max-w-80 hover:bg-zinc-800 rounded-xl p-5 h-full">
+            <div className="h-full flex flex-col justify-between">
+                <div>
+                    <p className="text-xl mb-5">{title}</p>
+                    <p className="text-sm text-gray-400">{blurb}</p>
+                </div>
+                <div className="flex mt-10 justify-between">
                     { sourceUrl ?
-                        <Tooltip className="bg-gray-900 p-2" content="Source Code">
-                            <a href={sourceUrl} target="_blank"><TbSourceCode className="text-5xl"/></a>
+                        <Tooltip className="bg-zinc-900 p-2" content="Source Code">
+                            <a href={sourceUrl} target="_blank"><FaGithub className="text-2xl fill-zinc-600 hover:fill-zinc-400"/></a>
                         </Tooltip>: null }
 
                     { appUrl ?
-                        <Tooltip className="bg-gray-900 p-2" content="Open Application">
-                            <a href={appUrl} target="_blank"><RxOpenInNewWindow className="text-5xl"/></a>
+                        <Tooltip className="bg-zinc-900 p-2" content="Open Application">
+                            <a href={appUrl} target="_blank"><FaRegWindowRestore className="text-2xl color-black fill-zinc-600 hover:fill-zinc-400"/></a>
                         </Tooltip> : null }
                 </div>
             </div>
