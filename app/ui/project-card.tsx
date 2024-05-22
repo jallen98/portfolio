@@ -3,7 +3,16 @@ import Image from "next/image";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { TbSourceCode } from "react-icons/tb";
 
-export default function ProjectCard({ title, imageProps, sourceUrl, appUrl }: { title: string, imageProps: { src: string, alt: string }, sourceUrl?: string, appUrl?: string }) {
+export interface ProjectCardData {
+    title: string;
+    imageProps: { src: string, alt: string };
+    sourceUrl?: string;
+    appUrl?: string;
+};
+
+export function ProjectCard({ data }: { data: ProjectCardData }) {
+    const { title, imageProps, sourceUrl, appUrl } = data;
+
     return (
         <div className="w-fit">
             <div className="text-center">

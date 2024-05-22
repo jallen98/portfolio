@@ -20,10 +20,10 @@ export default function Career() {
                             but no contractors were allowed to stay."
     return (
         <div className="flex flex-col items-center">
+            <p className="mb-5">{ nextdroid }</p>
             <Image className="mb-5" src="/nextdroid_app.jpg" alt="NextDroid Software" width="500" height="200"/>
-            <p className="mb-5 text-justify">{ nextdroid }</p>
+            <p className="mb-5">{ apple }</p>
             <Image className="mb-5" src="/nd_pointcloud.png" alt="NextDroid Software" width="500" height="200"/>
-            <p className="mb-5 text-justify">{ apple }</p>
         </div>
     );
 }

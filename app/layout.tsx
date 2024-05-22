@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./ui/header";
-
-const inter = Inter({ subsets: ["latin"] });
+import { spaceGrotesk } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${spaceGrotesk.className} antialiased`}>
         <div className="w-screen flex justify-center">
-          <div className="md:w-2/5">
+          <div className="md:w-3/5 ml-10 mr-10 mb-5">
             <Header/>
             {children}
           </div>
