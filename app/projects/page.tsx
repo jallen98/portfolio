@@ -17,7 +17,7 @@ export default function Projects() {
 
     return (
         <div className="flex">
-            { projects.map((data) => <div className="mr-10"><ProjectCard data={data} /></div>) }
+            { projects.map((data) => <div key={data.title} className="mr-10"><ProjectCard data={data} /></div>) }
         </div>
     );
 }
