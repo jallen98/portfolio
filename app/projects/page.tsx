@@ -18,8 +18,8 @@ export default function Projects() {
     ];
 
     return (
-        <div className="flex justify-between">
-            { projects.map((data) => <div key={data.title}><ProjectCard data={data} /></div>) }
+        <div className="flex flex-col md:flex-row justify-between w-full">
+            { projects.map((data) => <div className="mb-10" key={data.title}><ProjectCard data={data} /></div>) }
         </div>
     );
 }

@@ -16,8 +16,8 @@ export function ProjectCard({ data }: { data: ProjectCardData }) {
     const { title, blurb, imageProps, sourceUrl, appUrl } = data;
 
     return (
-        <div className="w-96 h-96 hover:bg-tertiary rounded-xl">
-            { imageProps ? <Image className="rounded-t-xl h-2/5" objectFit="cover" src={imageProps.src} alt={imageProps.alt} width={400} height={200}/> : null }
+        <div className="w-72 md:w-thumbnail h-96 hover:bg-tertiary rounded-xl">
+            { imageProps ? <Image className="rounded-t-xl h-2/5" objectFit="cover" src={imageProps.src} alt={imageProps.alt} width={350} height={200}/> : null }
             <div className="h-3/5 flex flex-col justify-between p-5">
                 <div>
                     <p className="text-xl mb-5">{title}</p>

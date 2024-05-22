@@ -21,6 +21,15 @@ const config: Config = {
         'typography':           'var(--color-typography)',
         'typography-secondary': 'var(--color-typography-secondary)',
         'background':           'var(--color-background)',
+      },
+      width: {
+        'thumbnail': '350px',
+      },
+      minWidth: {
+        'default': '800px',
+      },
+      maxWidth: {
+        'default': '800px',
       }
     },
   },
