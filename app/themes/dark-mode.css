@@ -1,7 +1,9 @@
 html[data-theme="dark-mode"] {
     --color-primary: white;
     --color-secondary: #71717a;
+    --color-tertiary: #27272a;
     --color-hover: #a1a1aa;
     --color-typography: white;
+    --color-typography-secondary: #a1a1aa;
     --color-background: black;
 }
