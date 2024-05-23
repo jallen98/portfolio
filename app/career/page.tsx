@@ -26,9 +26,8 @@ export default function Career() {
         "After NextDroid, I acquired an exciting year long contract with Apple through a company called TekSystems. I became part of a team\
         working on an internal 3D data visualizer for AI and Machine Learning output. Unfortunately, I can't speak much to the project\
         due to NDAs. I can say that this position allowed me to focus soley on my favorite parts of NextDroid: frontend and 3D Graphics.\
-        The application was written in TypeScript and Angular, using Three.js for the 3D. My impact on the team was felt immediately. I\
-        was in charge of designing and implementing many large features, ranging from interactive tables with thousands of rows to big\
-        performance boosts in the 3D pipeline.",
+        The application was written in TypeScript and Angular, using Three.js for the 3D. I was in charge of designing and implementing many\
+        large features, ranging from interactive tables with thousands of rows to big performance boosts in the 3D pipeline.",
 
         "The Apple contract differed from NextDroid quite a bit. My role was more targeted and predictable. There was more time to focus\
         on design and getting things right. It felt like a natural progression in my career, from the crazy world of a successful startup\
