@@ -3,6 +3,7 @@ html[data-theme="dark-mode"] {
     --color-secondary: #71717a;
     --color-tertiary: #27272a;
     --color-hover: #a1a1aa;
+    --color-hover-card: #18181b;
     --color-typography: white;
     --color-typography-secondary: #a1a1aa;
     --color-tooltip: #27272a;

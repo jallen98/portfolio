@@ -18,6 +18,7 @@ const config: Config = {
         'secondary':            'var(--color-secondary)',
         'tertiary':             'var(--color-tertiary)',
         'hover':                'var(--color-hover)',
+        'hover-card':           'var(--color-hover-card)',
         'typography':           'var(--color-typography)',
         'typography-secondary': 'var(--color-typography-secondary)',
         'tooltip':              'var(--color-tooltip)',
