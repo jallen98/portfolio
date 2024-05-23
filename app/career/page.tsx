@@ -46,16 +46,7 @@ export default function Career() {
             <Image className="w-auto h-auto mb-5" src="/nd_pointcloud.png" alt="Screenshot of NextDroid's Data Visualizer" width="400" height="200" priority={true}/>
 
             <h2 className="mb-2 text-2xl">Education</h2>
-
-            <div className="flex justify-between mb-2">
-                <p>Northeastern University</p>
-                <p>2016 - 2020</p>
-            </div>
-
-            <div className="flex justify-between mb-5">
-                <p>Bachelor of Science in Computer Engineering</p>
-                <p>GPA 3.986</p>
-            </div>
+            <p className="mb-5">Bachelor of Science in Computer Engineering from Northeastern University (2016-2020)</p>
 
             <h2 className="mb-5 text-2xl">NextDroid (July 2019 - July 2023)</h2>
             { nextdroid.map((paragraph, i) => <p key={`nextdroid-p${i}`} className="mb-5">{ paragraph }</p>) }
