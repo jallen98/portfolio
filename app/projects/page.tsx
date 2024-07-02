@@ -28,7 +28,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2">
             { projects.map((data) => <div className="mb-10 flex justify-center" key={data.title}><ProjectCard data={data} /></div>) }
         </div>
     );
